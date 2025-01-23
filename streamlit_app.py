@@ -17,8 +17,6 @@ secim = st.radio("Beğendin mi ?",
 if secim == "Hayır":
     st.error("Yanlış Seçenek")
 if secim == "Hayır":
-    st.warning("Doğru seçeneği seçmek için hala vaktin var.")
-if secim == "Hayır":
     secim2 = st.radio("Beğendin mi?",
              ("Evet","Evet")
             )
