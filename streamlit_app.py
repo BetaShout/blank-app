@@ -16,6 +16,8 @@ secim = st.radio("Beğendin mi ?",
 )
 if secim == "Hayır":
     st.error("Yanlış Seçenek")
+if secim == "Hayır":
+    st.warning("YANLIŞ!")
 
 def music_filter(keyword):
     headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}  # Authorization header'ını düzeltme
