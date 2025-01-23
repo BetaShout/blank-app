@@ -53,10 +53,20 @@ if keyword:
     results = music_filter(keyword)
     if results:
         st.subheader("Arama Sonuçları")
-        for result in results:
-            if st.button(f"{result['title']} "):
-                lyrics = sarki_sozleri(result["url"])
-                link_html = f'<a href="{result["url"]}" target="_blank" style="font-size: 20px; font-weight: bold; color: #1E90FF;">Şarkı Sözlerini Görmek İçin Tıklayınız👀</a>'
-                st.markdown(link_html, unsafe_allow_html=True)
+        for index, result in enumerate(results):  # Her şarkı sonucu için döngü
+    if st.button(f"{result['title']}", key=f"button_{index}"):  # Benzersiz bir key ile buton
+        # Şarkı sözlerini çekme
+        lyrics = sarki_sozleri(result["url"])
+        
+        if lyrics:  # Eğer şarkı sözleri başarıyla çekilmişse
+            st.subheader(result["title"])  # Şarkı başlığını göster
+            st.text(lyrics)  # Şarkı sözlerini göster
+            
+            # Genius sayfasına yönlendiren bir bağlantı oluştur
+            link_html = f'<a href="{result["url"]}" target="_blank" style="font-size: 20px; font-weight: bold; color: #1E90FF; text-decoration: none;">Şarkı Sözlerini Görmek İçin Tıklayınız 👀</a>'
+            st.markdown(link_html, unsafe_allow_html=True)
+        else:
+            st.error("Şarkı sözleri bulunamadı.")  # Eğer şarkı sözleri çekilemezse hata mesajı
+
     else:
         st.error("Sonuç Bulunamadı!")
