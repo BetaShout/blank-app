@@ -11,6 +11,21 @@ st.write("## Şarkı Arama V1")
 st.write("Anahtar Kelimesini Girdiğin Şarkının İsmini ve Genius.com Linkini Veren Uygulama")
 st.write("Daha iyi sonuçlar elde etmek için daha spesifik şarkı sözleri belirleyebilirsiniz.")
 keyword = st.text_input("Lütfen Anahtar Kelimeleri Giriniz. / İsteğe Göre Girdiğiniz Şarkıcının Şarkılarınıda Gösterir.")
+secim = st.radio("Nasıl olmuş?",
+         ("Çok İyi", "Harika" , "Orta", "Kötü")
+                )
+if secim == "Çok İyi":
+    st.write("Teşekkür Ederim.")
+if secim == "Harika"
+    st.write("Teşekkür Ederim.")
+if secim == "Orta"
+    st.write("Banane. Sordum mu?")
+if secim == "Kötü"
+    st.error("Yanlış Seçeneği Seçtin Sanırım)
+        st.radio("Tekrar Seçebilirsin.",
+             ("Çok İyi"), key="secim2")
+
+         
 
 
 def music_filter(keyword):
