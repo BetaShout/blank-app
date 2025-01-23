@@ -16,11 +16,11 @@ secim = st.radio("Nasıl olmuş?",
                 )
 if secim == "Çok İyi":
     st.write("Teşekkür Ederim.")
-if secim == "Harika"
+if secim == "Harika":
     st.write("Teşekkür Ederim.")
-if secim == "Orta"
+if secim == "Orta":
     st.write("Banane. Sordum mu?")
-if secim == "Kötü"
+if secim == "Kötü":
     st.error("Yanlış Seçeneği Seçtin Sanırım")
         st.radio("Tekrar Seçebilirsin.",
              ("Çok İyi"), key="secim2")
