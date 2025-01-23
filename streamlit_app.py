@@ -20,7 +20,7 @@ if secim == "Harika":
     st.write("Teşekkür Ederim.")
 if secim == "Orta":
     st.write("Banane. Sordum mu?")
-if seçim == "Kötü":
+if secim == "Kötü":
     st.error("Yanlış Seçeneği Seçtin Sanırım")
     st.radio("Tekrar Seçebilirsin.",
              ("Çok İyi", "İyi"), key="secim2")
