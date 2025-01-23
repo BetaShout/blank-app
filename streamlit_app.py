@@ -12,7 +12,7 @@ st.write("Anahtar Kelimesini Girdiğin Şarkının İsmini ve Genius.com Linkini
 st.write("Daha iyi sonuçlar elde etmek için daha spesifik şarkı sözleri belirleyebilirsiniz.")
 keyword = st.text_input("Lütfen Anahtar Kelimeleri Giriniz. / İsteğe Göre Girdiğiniz Şarkıcının Şarkılarınıda Gösterir.")
 secim = st.radio("Beğendin mi ?",
-                ("Evet","Hayır")
+                ("Geliştirilebilir","Evet","Hayır")
 )
 if secim == "Hayır":
     st.error("Yanlış Seçenek")
