@@ -67,6 +67,3 @@ if keyword:
             st.markdown(link_html, unsafe_allow_html=True)
         else:
             st.error("Şarkı sözleri bulunamadı.")  # Eğer şarkı sözleri çekilemezse hata mesajı
-
-    else:
-        st.error("Sonuç Bulunamadı!")
