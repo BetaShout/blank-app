@@ -43,10 +43,6 @@ def sarki_sozleri(url):
 
         if lyrics_div:
             return lyrics_div.get_text(separator="\n")
-        else:
-            return "Şarkı Sözleri Bulunamadı"
-    else:
-        return "Şarkı Sözleri Çekilemedi"
 
 
 if keyword:
