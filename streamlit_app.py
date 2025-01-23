@@ -19,7 +19,7 @@ if secim == "Hayır":
 if secim == "Hayır":
     st.warning("Doğru seçeneği seçmek için hala vaktin var.")
 if secim == "Hayır":
-    secim2 ==st.radio("Beğendin mi?",
+    secim2 = st.radio("Beğendin mi?",
              ("Evet","Evet")
             )
 if secim2 == "Evet":
