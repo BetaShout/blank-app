@@ -61,8 +61,7 @@ if keyword:
                     # Genius sayfasına yönlendiren bir bağlantı oluştur
                     link_html = f'<a href="{result["url"]}" target="_blank" style="font-size: 20px; font-weight: bold; color: #1E90FF; text-decoration: none;">Şarkı Sözlerini Görmek İçin Tıklayınız 👀</a>'
                     st.markdown(link_html, unsafe_allow_html=True)
-                else:
-                    st.error("Şarkı sözleri bulunamadı.")  # Eğer şarkı sözleri çekilemezse hata mesajı
+
     else:
         st.error("Sonuç bulunamadı!")  # Eğer hiçbir sonuç yoksa hata mesajı
 
