@@ -22,7 +22,7 @@ if secim == "Hayır":
     secim2 = st.radio("Beğendin mi?",
              ("Evet","Evet")
             )
-if secim2 == "Evet":
+if secim == "Evet":
     st.write("Teşekkür Ederim.")
 
 def music_filter(keyword):
