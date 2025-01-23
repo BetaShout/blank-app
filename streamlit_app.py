@@ -10,9 +10,8 @@ st.title("Müzik Filtresi V1")
 st.write("## Şarkı Arama V1")
 st.write("Anahtar Kelimesini Girdiğin Şarkının İsmini ve Genius.com Linkini Veren Uygulama")
 st.write("Daha iyi sonuçlar elde etmek için daha spesifik şarkı sözleri belirleyebilirsiniz.")
-st.markdown("deneme")
 keyword = st.text_input("Lütfen Anahtar Kelimeleri Giriniz. / İsteğe Göre Girdiğiniz Şarkıcının Şarkılarınıda Gösterir.")
-
+st.radio("Beğendin mi?", ["Evet ", "Evet"]
 
 def music_filter(keyword):
     headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}  # Authorization header'ını düzeltme
