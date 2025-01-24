@@ -11,7 +11,7 @@ st.write("## Şarkı Arama V1")
 st.write("Daha iyi sonuçlar elde etmek için daha spesifik şarkı sözleri belirleyebilirsiniz.")
 keyword = st.text_input("Lütfen Anahtar Kelimeleri Giriniz. / İsteğe Göre Girdiğiniz Şarkıcının Şarkılarınıda Gösterir.")
 secim = st.radio("Nasıl olmuş?",
-         ("Çok İyi", "Harika" , "Orta", "Kötü")
+         ("Fikrim Yok","Çok İyi", "Harika" , "Orta", "Kötü")
                 )
 if secim == "Çok İyi":
     st.write("Teşekkür Ederim.")
@@ -24,7 +24,8 @@ if secim == "Kötü":
     st.radio("Tekrar Seçebilirsin.",
              ("Çok İyi", "İyi"), key="secim2")
 
-         
+
+st.write("malsın ki")
 
 
 def music_filter(keyword):
