@@ -25,12 +25,6 @@ if secim == "Kötü":
              ("Çok İyi", "İyi"), key="secim2")
 
 
-if secim2 = "İyi"
-         st.write("Malsın ki")
-         
-         
-
-
 def music_filter(keyword):
     headers = {"Authorization": f"Bearer {ACCESS_TOKEN}"}  # Authorization header'ını düzeltme
     search_url = f"{GENIUS_API_URL}/search"
