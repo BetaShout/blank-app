@@ -25,7 +25,10 @@ if secim == "Kötü":
              ("Çok İyi", "İyi"), key="secim2")
 
 
-st.write("malsın ki")
+if secim2 = "İyi"
+         st.write("Malsın ki")
+         
+         
 
 
 def music_filter(keyword):
