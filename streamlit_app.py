@@ -13,6 +13,7 @@ keyword = st.text_input("Lütfen Anahtar Kelimeleri Giriniz. / İsteğe Göre Gi
 secim = st.radio("Nasıl olmuş?",
          ("Fikrim Yok","Çok İyi", "Harika" , "Orta", "Kötü")
                 )
+st.write("Malsın ki")
 if secim == "Çok İyi":
     st.write("Teşekkür Ederim.")
 if secim == "Harika":
